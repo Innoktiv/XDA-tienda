@@ -1,0 +1,126 @@
+.container-mf {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 0vh 33vh 35vh 25vh;
+
+  .box {
+    // border: 1px solid $primary;
+    //@include border(red, 1px);
+  }
+ 
+  .navbar {
+    margin: 0;
+    padding: 0;
+    grid-column: 1/3;
+    grid-row: 1/2;    
+  }
+  .hero {
+    background: url(../../../assets/img/imagen1.png);
+    background-size: 100%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .about {
+    background-color: $secondary;
+    
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    padding-top: $padd-sm;
+    padding-left: $padd-md;
+    
+    //background-color: red;
+  }
+  .newsletter {
+    background-color: $primary;
+    color: $secondary;
+
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+    padding-top: $padd-sm;
+    padding-left: $padd-md;
+  }
+  .suscribir {
+    background-color: $secondary;
+    height: 100px;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+   
+  @include respond-to($bp-md) {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 0vh 50vh 25vh 25vh;
+   
+    .navbar {
+      margin: 0;
+      padding: 0;
+      grid-column: 1/3;
+      grid-row: 1/2;    
+    }
+    .hero {
+      background: url(../../../assets/img/imagen1.png);
+      background-size: 100%;
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+    .about {
+      background-color: $secondary;
+      
+      grid-column: 1/2;
+      grid-row: 3/4;
+  
+      padding-top: $padd-sm;
+      padding-left: $padd-md;
+      
+      //background-color: red;
+    }
+    .newsletter {
+      background-color: $primary;
+      color: $secondary;
+  
+      grid-column: 1/2;
+      grid-row: 4/5;
+  
+      padding-top: $padd-sm;
+      padding-left: $padd-md;
+    }
+    .suscribir {
+      background-color: $secondary;
+      height: 100px;
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+  }
+
+  @include respond-to($bp-lg) {
+    //background: orange;
+    display: grid;
+    grid-template-columns: 4fr 50px 6fr;
+    grid-template-rows: 4vw 32vw 12vw;
+
+    .navbar {
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+    .about{
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .hero{
+      grid-column: 3/4;
+      grid-row: 2/4;
+    }
+    .newsletter {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    .suscribir {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
+
+}

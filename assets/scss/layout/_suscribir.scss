@@ -1,0 +1,16 @@
+h5 {
+  transform: rotate(90deg);
+  margin-top: 50px;
+}
+
+@include respond-to($bp-md) {
+  h5 {
+    margin-top: 120px;
+  }
+}
+
+@include respond-to($bp-lg) {
+  h5 {
+    margin-top: 60px;
+  }
+}

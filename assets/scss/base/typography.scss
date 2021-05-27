@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: $medio;
+  letter-spacing: 3px;
+}
+
+p {
+  // font-family: 'Playfair Display', serif;
+  font-size: $small;
+  color: $tertiary;
+}
+
+input {
+ font-size: $small;
+}
+
+@include respond-to($bp-lg) {
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: $big;
+    letter-spacing: 3px;
+  }
+}
